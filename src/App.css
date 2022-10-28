@@ -1,8 +1,8 @@
  
  
  #profile__img{
- width: 100px;
- height: 100px;
+ width: 200px;
+ height: 200x;
  border-radius: 50%;
 }
 
@@ -17,36 +17,48 @@ h1{
 	 
 }
 
-.zuri__btn{
-margin: 5rem 10rem 0 20rem;	
-  
-}
-
 #btn__zuri,
 #book__python,
 #book__design,
-#pitch {
-	 
+#pitch,
+#twitter__link {
 	padding: 10px 10px;
 	width: 40rem;
 	height: 3rem;
-	display: block;
-    margin: 2rem;
-	color: blue;
+	display: flex;
+	color:#000;
 	cursor: pointer;
-	 border-radius: 1rem;
-  
-
+	border-radius: 1rem;
+	background-color: #eaecf0;
+    justify-items: center;
+	align-items: center;
+	margin: 2rem;
 }
+.zuri__btn{
+	 
+margin: 5rem 10rem 0 20rem;
+ 	
+  
+}
+ .icons{  
+	  display: grid;
+	 grid-template-columns:  5% 5%;
+	  justify-content: center;
+ }
+	 
+ 
 @media screen and (max-width: 1150px) {
 	#btn__zuri,
 	#book__python,
 	#book__design,
-	#pitch{
+	#pitch,
+	#twitter__link {
 		width: 20rem; 
 		height: 4rem;
 		font-size: 1rem;
 		margin-left: 2.5rem;
+		text-align: center;
+		 
 	}
 
 	.Profile{
@@ -54,12 +66,138 @@ margin: 5rem 10rem 0 20rem;
 		padding-top: 1rem;
 	}
 
-	footer{
-	grid-template-rows: 1fr 2fr 1fr;
+	.icons {
+		 display: grid;
+		 grid-template-columns: 5% 5%;
+		 justify-content: center;
 		 
 	}
+
+.footerr {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: 25rem;
+	font-size: medium;
+
+
 }
 
+.footer__icon {
+	height: 2rem;
+	width: 10rem;
+
+}
+
+}
+
+ @media screen and (max-width: 900px) {
+    #profile__img {
+    	width: 150px;
+    	height: 100x;
+    	border-radius: 50%;
+    }
+	h1{
+		font-size: 2rem;
+	}
+
+
+ 	#btn__zuri,
+ 	#book__python,
+ 	#book__design,
+ 	#pitch,
+ 	#twitter__link {
+ 		width: 20rem;
+ 		height: 4rem;
+ 		font-size: 1rem;
+ 		margin-left: 2.5rem;
+ 		text-align: center;
+
+ 	}
+
+ 	.Profile {
+ 		margin: 1rem 27rem;
+ 		padding-top: 1rem;
+ 	}
+
+ 	.icons {
+ 		justify-content: space-around;
+ 		padding-left: 28rem;
+		margin-right: 10rem;
+ 	}
+
+ 	.footerr {
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 		flex-direction: column;
+ 		margin-left: 25rem;
+ 		font-size: medium;
+
+
+ 	}
+
+ 	.footer__icon {
+ 		height: 2rem;
+ 		width: 10rem;
+
+ 	}
+
+ }
+
+  @media screen and (max-width: 600px) {
+    #profile__img {
+    	width: 80px;
+    	height: 100x;
+    	border-radius: 50%;
+    }
+	 
+  	#btn__zuri,
+  	#book__python,
+  	#book__design,
+  	#pitch,
+  	#twitter__link {
+  		max-width: 15rem;
+  		height: 4rem;
+  		font-size: 1rem;
+  		margin-right: 35rem;
+  		text-align: center;
+
+  	}
+
+  	.Profile {
+  		margin: 1rem 27rem;
+  		 
+  	}
+   
+	h1{
+		font-size: 20px;
+	}
+  	.icons {
+  		justify-content: space-around; 
+  		 padding-left: 25rem;
+		 margin-right: 3rem;
+  	}
+
+  	.footerr {
+		  display: flex;
+		  flex-wrap: wrap;
+		  flex-direction: column;
+	      margin-left: 25rem;
+		  font-size: medium;
+		 
+		 
+  	}
+	.footer__icon{
+      height: 2rem;
+	  width: 10rem;
+	 
+	}
+
+   
+  }
+
+
+  
 a{
 	text-decoration: none;
 }
@@ -68,11 +206,13 @@ a:hover{
 	color: blue;
 }
  
-footer{
-	display: grid;
-	grid-template-columns: 35% 35% 40%;
-	margin: 5rem 1rem 0 3rem ;
-	position: sticky;
-	font-size: 1rem;
+.footerr {
+ 
+ display: flex;
+ flex-grow: 1;
+ padding: 20px 0;
+ justify-content: space-around;
+ 
+ 
 
 }

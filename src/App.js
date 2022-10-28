@@ -1,8 +1,9 @@
  import React from "react";
-import Profile from "./component/Profile";
+import Profile from "./Profile";
 import './App.css';
-import ZuriButton from "./component/ZuriButton";
-import Footer from "./component/Footer";
+import ZuriButton from "./ZuriButton";
+import Footer from "./Footer";
+import Icons from "./Icons";
  
  
 
@@ -10,8 +11,9 @@ function App() {
   return (
     <div>
        <Profile />
-     <ZuriButton />
-      <Footer />   
+       <ZuriButton />
+       <Icons />
+       <Footer />   
     </div>
   );
 }
