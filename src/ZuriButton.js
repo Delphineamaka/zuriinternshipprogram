@@ -19,7 +19,7 @@
 	 <a id='book__design' target='_blank' rel="noreferrer" href='https://
 	 books.zuri.team/design-rules'>Design</a> 
 	  
-		<a id='contact'  ><Link to='/Contact' id='contact'>Contact</Link></a>
+		 <Link to='/Contact' id='contact'>Contact</Link> 
 	    
 	</section>
 
