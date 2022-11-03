@@ -1,24 +1,82 @@
- 
+ h1 {
+ 	color:  #667085;
+ 	padding-top: 20px;
+
+ }
+ h4{
+	padding: 2rem;
+ }
  
  #profile__img{
  width: 200px;
  height: 200x;
  border-radius: 50%;
+
 }
 
-.Profile{
- margin: 5rem 40rem;
-	
-}
 
-h1{
-	color: rgb(124, 19, 19);
-	padding-top: 20px;
-	 
-}
 #contact{
 	text-decoration: none;
 	color: black;
+}
+.container,
+.Profile{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+
+	 
+}
+
+
+.checked{
+	margin: 0.5rem;
+}
+
+#message{
+	 
+	line-height: 1;
+	width: 35rem;
+	font-size: 1rem;
+	height: 8rem;
+	border:1px solid #000;
+	margin: 0.5rem;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+
+#first_name,
+#last_name,
+#email{
+	color: #667085;
+	font-size: 1rem;
+	width: 35rem;
+	height: 2rem;
+	border: 1px solid #000;
+	padding: 1.5rem;
+	border-radius: 1rem;
+}
+ 
+#email,
+#message {
+	color: #D0D5DD;
+	 
+	 
+}
+ 
+
+#btn__submit{
+	font-size: 1rem;
+	width: 35rem;
+	height: 4rem;
+	background-color: blue;
+	color: #ffffff;
+	margin:2rem 2rem;
+	border-radius: 2rem;
 }
 
 #btn__zuri,
@@ -27,9 +85,9 @@ h1{
 #pitch,
 #twitter__link,
 #contact{
-	padding: 10px 10px;
-	max-width: 50%;
-	height: 50%;
+	 
+	width: 35rem;
+	height: 4rem;
 	display: flex;
 	color:#000;
 	cursor: pointer;
@@ -39,179 +97,20 @@ h1{
 	align-items: center;
 	margin: 2rem;
 }
-.zuri__btn{
-	 
-margin: 5rem 10rem 0 20rem;
-width: 100%;
- 	
-  
-}
+
  .icons{  
 	  display: grid;
 	 grid-template-columns:  5% 5%;
 	  justify-content: center;
+	  padding-bottom: 1rem;
  }
-	 
- 
-@media screen and (max-width: 1150px) {
-	#btn__zuri,
-	#book__python,
-	#book__design,
-	#pitch,
-	#twitter__link {
-		width: 20rem; 
-		height: 4rem;
-		font-size: 1rem;
-		margin-left: 2.5rem;
-		text-align: center;
-		 
-	}
-
-	.Profile{
-		margin: 1rem 27rem;
-		padding-top: 1rem;
-	}
-
-	.icons {
-		 display: grid;
-		 grid-template-columns: 5% 5%;
-		 justify-content: center;
-		 
-	}
-
-.footerr {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	margin-left: 25rem;
-	font-size: medium;
-
-
-}
-
-.footer__icon {
-	height: 2rem;
-	width: 10rem;
-
-}
-
-}
-
- @media screen and (max-width: 900px) {
-    #profile__img {
-    	width: 150px;
-    	height: 100x;
-    	border-radius: 50%;
-    }
-	h1{
-		font-size: 2rem;
-	}
-
-
- 	#btn__zuri,
- 	#book__python,
- 	#book__design,
- 	#pitch,
- 	#twitter__link {
- 		width: 20rem;
- 		height: 4rem;
- 		font-size: 1rem;
- 		margin-left: 2.5rem;
- 		text-align: center;
-
- 	}
-
- 	.Profile {
- 		margin: 1rem 27rem;
- 		padding-top: 1rem;
- 	}
-
- 	.icons {
- 		justify-content: space-around;
- 		padding-left: 28rem;
-		margin-right: 10rem;
- 	}
-
- 	.footerr {
- 		display: flex;
- 		flex-wrap: wrap;
- 		flex-direction: column;
- 		margin-left: 25rem;
- 		font-size: medium;
-
-
- 	}
-
- 	.footer__icon {
- 		height: 2rem;
- 		width: 10rem;
-
- 	}
-
- }
-
-  @media screen and (max-width: 600px) {
-    #profile__img {
-    	width: 80px;
-    	height: 100x;
-    	border-radius: 50%;
-    }
-	 
-  	#btn__zuri,
-  	#book__python,
-  	#book__design,
-  	#pitch,
-  	#twitter__link {
-  		max-width: 15rem;
-  		height: 4rem;
-  		font-size: 1rem;
-  		margin-right: 35rem;
-  		text-align: center;
-
-  	}
-
-  	.Profile {
-  		margin: 1rem 27rem;
-  		 
-  	}
-   
-	h1{
-		font-size: 20px;
-	}
-  	.icons {
-  		justify-content: space-around; 
-  		 padding-left: 25rem;
-		 margin-right: 3rem;
-  	}
-
-  	.footerr {
-		  display: flex;
-		  flex-wrap: wrap;
-		  flex-direction: column;
-	      margin-left: 25rem;
-		  font-size: medium;
-		 
-		 
-  	}
-	.footer__icon{
-      height: 2rem;
-	  width: 10rem;
-	 
-	}
-
-   
-  }
-
-
-  
+	
 a{
 	text-decoration: none;
+	color: #000;
+	 
 }
 
-a:hover{
-	color: blue;
-}
- 
 .footerr {
  
  display: flex;
@@ -220,5 +119,124 @@ a:hover{
  justify-content: space-around;
  
  
+
+}
+@media screen and (max-width: 900px) {
+	#profile__img {
+		width: 150px;
+		height: 100x;
+		border-radius: 50%;
+	}
+
+	h1 {
+		font-size: 2rem;
+		padding: 2rem;
+	}
+
+	.container,
+	.Profile {
+		padding: 1rem;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+
+
+	}
+
+	#first_name,
+	#last_name,
+	#btn__submit,
+	#message,
+	#email {
+		width: 20rem;
+		height: 4rem;
+	}
+
+	#btn__zuri,
+	#book__python,
+	#book__design,
+	#pitch,
+	#twitter__link,
+	#contact {
+		width: 35rem;
+		height: 4rem;
+		font-size: 1rem;
+		text-align: center;
+
+	}
+
+
+	.footerr {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	    padding: 2rem;
+	 
+
+
+	}
+
+	.footer__icon {
+		height: 2rem;
+		width: 10rem;
+
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	#profile__img {
+		width: 80px;
+		height: 100x;
+		border-radius: 50%;
+	}
+
+	.container,
+	.Profile {
+		padding: 2rem ;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+
+
+	}
+
+	#btn__zuri,
+	#book__python,
+	#book__design,
+	#pitch,
+	#twitter__link,
+	#contact {
+		width: 20rem;
+		height: 4rem;
+		font-size: 1rem;
+		text-align: center;
+
+	}
+
+
+
+	h1 {
+		font-size: 20px;
+	}
+
+	 
+
+	.footerr {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding: 2rem;
+
+
+
+	}
+
+	.footer__icon {
+		height: 2rem;
+		width: 10rem;
+
+	}
+
 
 }

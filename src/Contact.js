@@ -32,51 +32,65 @@ function Contact() {
 
   return (
 	<div className='container'>
+	<h1>Contact Me</h1>
+	<h4>Hi there, contact me to ask me about anything you have in mind.</h4>
 	  <form>
+
 	  <label>First Name</label> 
+	      <br />  
 		<input
 		onChange={handleChange}
 		name='fName'
 		id='first_name'
-		 placeholder='First Name' 
-		 type='text'
-		 required
-			value={contact.fName}
+		placeholder='Enter your First Name' 
+		type='text'
+	    required
+		value={contact.fName}
 
-
-		/> <br />
-		<label>Last Name</label>
+		/>  
+	 <br /> <br />
+        <label>Last Name </label>
+		    <br /> 
 		<input 
-		onChange={handleChange}
-         name='lName'
+		  onChange={handleChange}
+          name='lName'
 		  id='last_name'
 		  type='text'
-			placeholder='Last Name'
-			required
-			value={contact.lName}
-		/> <br / >
-		<label>Email</label>
+		  placeholder='Enter Your Last Name'
+		  required
+		  value={contact.lName}
+				 
+		/>  
+	      
+	  
+		<br /><br />
+		<label>Email</label> <br />
 		<input 
+		id='email'
 		onChange={handleChange}
 		name='email'
-		placeholder='email'
+		placeholder='yourname@email.com'
 		required
 		type='email'
-		value={contact.email}
-
-		/> <br />
+		value={contact.email}/> <br /> <br />
+		<label> Message</label>  <br/> 
 		<textarea 
+		id='message'
 		onChange={handleChange}
 		style={{resize: 'none'}}
 			name='comments'
-			placeholder=' comments here...'
-			cols={20}
+			placeholder='Send me a message and I will reply you as soon as possible...'
+			cols={40}
 			rows='4'
 			required
 			autoFocus
-			value={contact.comments}
-		/> <br />
-		<button type='button' onClick={submitButton}>Submit</button>
+			value={contact.comments}/>  <br />
+		<input type='checkbox'
+		className='checked' 
+		required />
+		<label>
+         You agree to providing your data to Delphine who may contact you.</label>  <br />
+		<button type='submit' id='btn__submit' onClick={submitButton}>Send message</button>
 
 	  </form>
 	</div>

@@ -5,7 +5,7 @@
  
  function ZuriButton() {
    return (
-	<section className='zuri__btn'>
+	<section >
 	   
 	   <a target='_blank' rel="noreferrer" id='twitter__link' href='https://twitter.com/Delphine5012?t=uoQ0pWHasuRYvbdnaqfadQ&s=03'>Twitter link</a>
 	    <a id='btn__zuri' target='_blank' rel="noreferrer" href = 'https: //training.zuri.team/'>Zuri team</a> 
@@ -19,7 +19,7 @@
 	 <a id='book__design' target='_blank' rel="noreferrer" href='https://
 	 books.zuri.team/design-rules'>Design</a> 
 	  
-		<a id='contact' ><Link to='/Contact'>Contact</Link></a>
+		<a id='contact'  ><Link to='/Contact' id='contact'>Contact</Link></a>
 	    
 	</section>
 
