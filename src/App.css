@@ -16,15 +16,20 @@ h1{
 	padding-top: 20px;
 	 
 }
+#contact{
+	text-decoration: none;
+	color: black;
+}
 
 #btn__zuri,
 #book__python,
 #book__design,
 #pitch,
-#twitter__link {
+#twitter__link,
+#contact{
 	padding: 10px 10px;
-	width: 40rem;
-	height: 3rem;
+	max-width: 50%;
+	height: 50%;
 	display: flex;
 	color:#000;
 	cursor: pointer;
@@ -37,6 +42,7 @@ h1{
 .zuri__btn{
 	 
 margin: 5rem 10rem 0 20rem;
+width: 100%;
  	
   
 }

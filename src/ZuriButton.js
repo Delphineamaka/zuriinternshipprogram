@@ -1,9 +1,11 @@
  import React from 'react';
+ import {Link } from 'react-router-dom';
+ 
  
  
  function ZuriButton() {
    return (
-	<div className='zuri__btn'>
+	<section className='zuri__btn'>
 	   
 	   <a target='_blank' rel="noreferrer" id='twitter__link' href='https://twitter.com/Delphine5012?t=uoQ0pWHasuRYvbdnaqfadQ&s=03'>Twitter link</a>
 	    <a id='btn__zuri' target='_blank' rel="noreferrer" href = 'https: //training.zuri.team/'>Zuri team</a> 
@@ -16,9 +18,10 @@
 
 	 <a id='book__design' target='_blank' rel="noreferrer" href='https://
 	 books.zuri.team/design-rules'>Design</a> 
-
-	 
-	</div>
+	  
+		<Link id='contact' to='/Contact'>Contact</Link>
+	    
+	</section>
 
    )
  }
