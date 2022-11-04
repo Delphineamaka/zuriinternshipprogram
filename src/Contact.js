@@ -44,7 +44,7 @@ function Contact() {
 		id='first_name'
 		placeholder='Enter your First Name' 
 		type='text'
-	    required
+	  
 		value={contact.fName}
 
 		/>  
@@ -57,7 +57,7 @@ function Contact() {
 		  id='last_name'
 		  type='text'
 		  placeholder='Enter Your Last Name'
-		  required
+		  
 		  value={contact.lName}
 				 
 		/>  
@@ -70,7 +70,7 @@ function Contact() {
 		onChange={handleChange}
 		name='email'
 		placeholder='yourname@email.com'
-		required
+	 
 		type='email'
 		value={contact.email}/> <br /> <br />
 		<label> Message</label>  <br/> 
@@ -82,12 +82,12 @@ function Contact() {
 			placeholder='Send me a message and I will reply you as soon as possible...'
 			cols={40}
 			rows='4'
-			required
+			 
 			autoFocus
 			value={contact.comments}/>  <br />
 		<input type='checkbox'
 		className='checked' 
-		required />
+		 />
 		<label>
          You agree to providing your data to Delphine who may contact you.</label>  <br />
 		<button type='submit' id='btn__submit' onClick={submitButton}>Send message</button>
